@@ -11,7 +11,7 @@ class TicTacToe
   ]
 
 def play
-  while !over
+  while !over?
     turn
   end
 
@@ -20,7 +20,7 @@ def play
   elsif draw?
     puts "Cat's game!"
   end
-end 
+end
 
 def initialize
   @board = Array.new(9, " ")
