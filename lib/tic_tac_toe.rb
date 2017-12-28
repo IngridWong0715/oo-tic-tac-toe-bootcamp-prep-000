@@ -10,6 +10,16 @@ class TicTacToe
     [2,4,6]
   ]
 
+def play
+  while !over
+    turn
+  end
+
+  if won?
+    puts "Congratulations #{winner}!"
+  elsif draw?
+    puts "Cat's game! "
+
 def initialize
   @board = Array.new(9, " ")
 end
